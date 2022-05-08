@@ -1,0 +1,111 @@
+{
+  "language": "Español",
+  "Header": {
+    "title": "Anonymath",
+    "subtitle": "Mensajes matemáticos, anónimos y analógicos."
+  },
+  "Home": {
+    "head": {
+      "title": "Anonymath",
+      "meta": {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+      }
+    },
+    "steps": {
+      "one": {
+        "title": "Imprimir",
+        "no-print": "¿No tienes impresora? no te preocupes utiliza una hoja en blanco.",
+        "download": "Descargar plantilla"
+      },
+      "two": {
+        "title": "Escribir",
+        "description": "En la plantilla, puedes escribir lo que quieras: un problema que no tienes ni idea de cómo resolverlo, una formula que te ha gustado, un truco para resolver ecuaciones, lo mal o lo bien que se explica tu profesor, lo mucho que odias o amas las matemáticas. Tú mismo."
+      },
+      "three": {
+        "title": "Doblar",
+        "description": "Estas son las instrucciones para doblar la hoja que has imprimido y en la que has escrito tu mensaje matemático.",
+        "steps": {
+          "one": {
+            "title": "Primer paso"
+          },
+          "two": {
+            "title": "Segundo paso"
+          },
+          "three": {
+            "title": "Tercer paso"
+          },
+          "four": {
+            "title": "Cuarto paso"
+          },
+          "five": {
+            "title": "Quinto paso"
+          },
+          "six": {
+            "title": "Sexto paso"
+          },
+          "seven": {
+            "title": "Septimo paso"
+          }
+        }
+      },
+      "four": {
+        "title": "Liberar",
+        "description": "Ahora \"libéralo\", puedes dejar tu mensaje matemático donde quieras."
+      }
+    }
+  },
+  "Contribute": {
+    "head": {
+      "title": "Anonymath - Contribuir",
+      "meta": {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+      }
+    },
+    "main": {
+      "title": "Contribuir",
+      "content": {
+        "one": "Si tienes ideas para mejorar Anonymath puedes contárnoslas escribiendo un <em>issue</em> en nuestro <a href=\"https://github.com/isfegu/anonymath/issues\">repositorio de Github</a>.",
+        "two": "Si quieres desarrollar tu idea puedes hacerlo mediante un <em>pull request</em> en nuestro <a href=\"https://github.com/isfegu/anonymath\">repositorio de Github</a>. Te recomendamos que antes te leas el README que hay en nuestro repositorio.",
+        "three": "Puedes ayudar traduciendo Anonymath. Tienes dos formas de hacerlo, desde POEditor o desde el código fuente.",
+        "translate": {
+          "poeditor": {
+            "title": "Mediante POEditor",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium quam sed mi cursus, non dignissim mauris efficitur. Vestibulum vehicula sed leo ac vulputate. Etiam lectus urna, scelerisque ac dolor at, faucibus dignissim risus. Donec faucibus nibh purus, vel ultricies massa interdum ut. Donec orci dui, egestas sed elit eget, congue tristique risus. Sed quis urna vitae arcu aliquet vehicula. Etiam ut erat sit amet nunc vestibulum tincidunt vel vel leo. Nam sit amet lacus sagittis, viverra lectus id, lobortis augue. Etiam non dolor diam. Nunc a lobortis lorem, quis pharetra tortor. Pellentesque sit amet aliquet libero, in sagittis velit. Vivamus quis accumsan lectus, quis aliquam lectus. Donec varius egestas urna at faucibus. https://poeditor.com/"
+          },
+          "sourcecode": {
+            "title": "Mediante el código fuente",
+            "content": "Para hacer cualquier modificación en las traducciones existentes o para añadir una nueva traducción desde el código fuente de Anonymath sigue las instrucciones que hay en el <a href=\"https://github.com/isfegu/anonymath#contribuir\">README del proyecto</a>."
+          }
+        }
+      }
+    }
+  },
+  "About": {
+    "head": {
+      "title": "Anonymath - Acerca de",
+      "meta": {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+      }
+    },
+    "main": {
+      "title": "Acerca de",
+      "content": {
+        "paragraphs": [
+          {
+            "description": "Este sitio web funciona gracias a <a href=\"https://nextjs.org/\" target=\"_blank\">Next.js</a>, <a href=\"https://bulma.io/\" target=\"_blank\">Bulma</a> y <a href=\"https://netlify.com\">Netlify</a>."
+          },
+          {
+            "description": "El código fuente y el contenido están disponibles en <a href=\"https://github.com/isfegu/anonymath\" target=\"_blank\">Github</a> bajo lincencia <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.es\" rel=\"license\" target=\"_blank\">Creative Commons BY-NC</a>."
+          },
+          {
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+          }
+        ]
+      }
+    }
+  },
+  "Footer": {
+    "about": "Acerca de...",
+    "contribute": "Contribuir"
+  }
+}

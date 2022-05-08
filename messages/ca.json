@@ -1,0 +1,111 @@
+{
+  "language": "Català",
+  "Header": {
+    "title": "Anonymath",
+    "subtitle": ""
+  },
+  "Home": {
+    "head": {
+      "title": "Anonymath",
+      "meta": {
+        "description": ""
+      }
+    },
+    "steps": {
+      "one": {
+        "title": "",
+        "no-print": "",
+        "download": ""
+      },
+      "two": {
+        "title": "",
+        "description": ""
+      },
+      "three": {
+        "title": "",
+        "description": "",
+        "steps": {
+          "one": {
+            "title": ""
+          },
+          "two": {
+            "title": ""
+          },
+          "three": {
+            "title": ""
+          },
+          "four": {
+            "title": ""
+          },
+          "five": {
+            "title": ""
+          },
+          "six": {
+            "title": ""
+          },
+          "seven": {
+            "title": ""
+          }
+        }
+      },
+      "four": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "Contribute": {
+    "head": {
+      "title": "",
+      "meta": {
+        "description": ""
+      }
+    },
+    "main": {
+      "title": "",
+      "content": {
+        "one": "",
+        "two": "",
+        "three": "",
+        "translate": {
+          "poeditor": {
+            "title": "",
+            "content": ""
+          },
+          "sourcecode": {
+            "title": "",
+            "content": ""
+          }
+        }
+      }
+    }
+  },
+  "About": {
+    "head": {
+      "title": "",
+      "meta": {
+        "description": ""
+      }
+    },
+    "main": {
+      "title": "",
+      "content": {
+        "paragraphs": [
+          {
+            "description": ""
+          },
+          {
+            "description": ""
+          },
+          {
+            "description": ""
+          }
+        ]
+      }
+    }
+  },
+  "Footer": {
+    "about": "Sobre...",
+    "contribute": "Contribuir"
+  }
+}

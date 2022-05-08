@@ -1,0 +1,178 @@
+@import 'variables.scss';
+
+header {
+  margin-top: 8rem;
+}
+
+footer {
+  margin-top: 8rem;
+
+  .footer-links a {
+    color: $black;
+    border-bottom: 2px solid $black;
+    margin: 0 1rem;
+
+    &:hover {
+      border-bottom: 0px;
+    }
+  }
+}
+
+.brand {
+  position: absolute;
+  top: -100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.is-family-serif {
+  font-family: $family-serif;
+}
+
+.section {
+  a {
+    color: $black;
+    border-bottom: 2px solid $black;
+
+    &:hover {
+      border-bottom: 0px;
+    }
+  }
+
+  .image-link {
+    border-bottom: none;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+.separator {
+  background-image: url(../public/arrow.svg);
+  background-image: url('data:image/svg+xml;utf8,<svg width="55.570511" height="39.800148" viewBox="0 0 14.703031 10.530456" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-79.499659,-35.058532)"><path style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round;" d="m 79.999659,40.279375 c 4.328468,-0.246655 10.537414,-0.307061 12.971259,0.478869" /><path style="fill:none;stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round;stroke-linejoin:round;" d="m 87.106294,45.088988 c 2.261658,-1.840713 4.381015,-2.897582 6.596416,-3.783612 -1.506978,-2.948502 -2.78209,-4.040332 -4.994305,-5.746844" /></g></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 80px;
+  margin: 0 auto;
+  transform: rotate(90deg);
+
+  &.odd {
+    transform: rotate(90deg);
+  }
+
+  &.even {
+    transform: scaleX(-1) rotate(90deg);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.step {
+  margin-top: 1.5rem;
+
+  &.first {
+    margin-top: 5rem;
+  }
+
+  @include from(1024px) {
+    &.even {
+      transform: rotate(2deg);
+    }
+
+    &.odd {
+      transform: rotate(-2deg);
+    }
+  }
+
+  h2 {
+    color: $dark-grey;
+    font-size: 3.75rem;
+    line-height: 1;
+    font-family: $family-serif;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 35px;
+      bottom: -35px;
+      left: 0;
+      background-image: url('data:image/svg+xml;utf8,<svg width="307.29675" height="29.013695" viewBox="0 0 81.305595 7.6765399" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-18.256701,-102.07825)"><path style="fill:none;stroke:rgba(0,0,0,1);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 20.756701,107.25479 c 21.531967,-2.44655 64.701974,-1.821 76.305593,-2.67654" /></g></svg>');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+
+  p {
+    color: $light-grey;
+    font-size: 1.125rem;
+    letter-spacing: -0.06rem;
+  }
+
+  &.box-alt {
+    p {
+      color: $dark-grey;
+    }
+  }
+}
+
+@keyframes arrow-right-carousel-animation {
+  0% {
+    margin-right: 0;
+  }
+
+  100% {
+    margin-right: -50px;
+  }
+}
+
+/* BULMA REWRITED RULES */
+
+.navbar-menu {
+  background-color: #ffffff;
+  @include from(1024px) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@include from(1024px) {
+  .navbar-dropdown.is-right {
+    right: 10px;
+  }
+}
+.footer,
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar-dropdown a.navbar-item.is-active {
+  font-weight: 700;
+  color: $dark-grey;
+}
+
+.navbar-dropdown a.navbar-item:focus,
+.navbar-dropdown a.navbar-item:hover {
+  background-color: #ffdd005d;
+}
+
+a.navbar-link,
+a.navbar-link:focus,
+a.navbar-link:hover {
+  background-color: transparent !important;
+}
+
+.subtitle {
+  color: $dark-grey;
+}
