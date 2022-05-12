@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "anonymath",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,15 @@
     "start": "next start",
     "lint": "next lint",
     "prettier:check": "prettier -c .",
-    "prettier:write": "prettier -w ."
+    "prettier:write": "prettier -w .",
+    "test:unit": "node_modules/.bin/jest --testPathPattern=tests/unit"
+  },
+  "jest": {
+    "verbose": true,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/tests/e2e/"
+    ]
   },
   "dependencies": {
     "bulma": "^0.9.3",
@@ -31,6 +39,7 @@
     "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^7.0.4",
+    "jest": "^28.1.0",
     "prettier": "^2.6.2",
     "typescript": "^4.6.4"
   },
