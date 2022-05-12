@@ -14,3 +14,25 @@ jobs:
         run: yarn
       - name: Run unit tests
         run: yarn test:unit
+  e2e:
+    needs: unit
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - name: Install project dependencies
+        run: yarn
+      - name: Install Playwright
+        run: npx playwright install
+      - name: Install Playwright dependencies
+        run: npx playwright install-deps
+      - name: Waiting for 200 from the Netlify Preview
+        uses: jakepartusch/wait-for-netlify-action@v1.2
+        id: waitFor200
+        with:
+          site_name: "3c7b2a4d-ecb5-4c54-ac43-5a6625e3ed5b"
+      - name: Run E2E tests on Netlify URL
+        run: E2E_START_URL="${{ steps.waitFor200.outputs.url }}" yarn test:e2e  
