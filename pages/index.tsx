@@ -1,16 +1,16 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import FoldingInstructions from '../components/FoldingInstructions';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import HtmlHead from '../components/HtmlHead';
 import Navbar from '../components/Navbar';
 import { useTranslations } from 'next-intl';
 
-export const getStaticProps = async (locale: any) => {
+export const getStaticProps = async (params: any) => {
   return {
     props: {
-      messages: (await import(`../messages/${locale.locale}.json`)).default,
-      locale: locale,
+      messages: (await import(`../messages/${params.locale}.json`)).default,
+      locale: params.locale,
       languages: process.env.languages,
     },
   };
@@ -18,7 +18,6 @@ export const getStaticProps = async (locale: any) => {
 
 function Home(props: any) {
   const t = useTranslations('Home');
-
   const smoothScrollTo = (idName: String) => {
     if (typeof window !== 'undefined') {
       const element = document.getElementById(`${idName}`);
@@ -30,14 +29,12 @@ function Home(props: any) {
 
   return (
     <>
-      <Head>
-        <title>
-          {t('head.title')} - {t('head.meta.description')}
-        </title>
-        <meta name="description" content={t('head.meta.description')} />
-      </Head>
-
-      <Navbar languages={props.languages} currentLocale={props.locale.locale} />
+      <HtmlHead
+        currentLocale={props.locale}
+        title={t('head.title')}
+        description={t('head.meta.description')}
+      />
+      <Navbar languages={props.languages} currentLocale={props.locale} />
 
       <Header />
 
