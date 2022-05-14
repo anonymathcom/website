@@ -8,13 +8,14 @@
     "head": {
       "title": "Anonymath",
       "meta": {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+        "description": "Mensajes matemáticos, anónimos y analógicos."
       }
     },
     "steps": {
       "one": {
         "title": "Imprimir",
-        "no-print": "¿No tienes impresora? no te preocupes utiliza una hoja en blanco.",
+        "description": "Para empezar debes descargar e imprimir la plantilla.",
+        "no-print": "¿No tienes impresora?, no te preocupes utiliza una hoja en blanco.",
         "download": "Descargar plantilla"
       },
       "two": {
@@ -58,7 +59,7 @@
     "head": {
       "title": "Anonymath - Contribuir",
       "meta": {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+        "description": "Maneras de ayudar a mejorar Anonymath."
       }
     },
     "main": {
@@ -84,7 +85,7 @@
     "head": {
       "title": "Anonymath - Acerca de",
       "meta": {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+        "description": "Un poco de información sobre Anonymath."
       }
     },
     "main": {
@@ -96,9 +97,6 @@
           },
           {
             "description": "El código fuente y el contenido están disponibles en <a href=\"https://github.com/isfegu/anonymath\" target=\"_blank\">Github</a> bajo lincencia <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.es\" rel=\"license\" target=\"_blank\">Creative Commons BY-NC</a>."
-          },
-          {
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
           }
         ]
       }

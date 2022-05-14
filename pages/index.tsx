@@ -31,7 +31,9 @@ function Home(props: any) {
   return (
     <>
       <Head>
-        <title>{t('head.title')}</title>
+        <title>
+          {t('head.title')} - {t('head.meta.description')}
+        </title>
         <meta name="description" content={t('head.meta.description')} />
       </Head>
 
@@ -45,6 +47,7 @@ function Home(props: any) {
             {/* STEP 1 */}
             <section className="section box step first odd">
               <h2>{t('steps.one.title')}</h2>
+              <p className="mb-5">{t('steps.one.description')}</p>
 
               <Link href="/anonymath.pdf" locale="">
                 <a
