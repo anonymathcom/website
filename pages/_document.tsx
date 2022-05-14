@@ -27,18 +27,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&Inter&display=swap"
             rel="stylesheet"
           />
-
-          {/* {process.env.NETLIFY === 'true' ? (
-                        <>
-                            <script src="https://getinsights.io/js/insights.js"></script>
-                            <script dangerouslySetInnerHTML={{
-                                __html: "insights.init('j2x__mZtlN831KAD'); insights.trackPages();",
-                            }} />
-                        </>
-                    ) : (
-                        <></>
-                    )
-                    } */}
         </Head>
         <body>
           <Main />

@@ -1,16 +1,16 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import HtmlHead from '../components/HtmlHead';
 import Navbar from '../components/Navbar';
 import { useTranslations } from 'next-intl';
 import github from '../public/github.svg';
 
-export const getStaticProps = async (locale: any) => {
+export const getStaticProps = async (params: any) => {
   return {
     props: {
-      messages: (await import(`../messages/${locale.locale}.json`)).default,
-      locale: locale,
+      messages: (await import(`../messages/${params.locale}.json`)).default,
+      locale: params.locale,
       languages: process.env.languages,
     },
   };
@@ -20,12 +20,13 @@ function Contribute(props: any) {
   const t = useTranslations('Contribute');
   return (
     <>
-      <Head>
-        <title>{t('head.title')}</title>
-        <meta name="description" content={t('head.meta.description')} />
-      </Head>
+      <HtmlHead
+        currentLocale={props.locale}
+        title={t('head.title')}
+        description={t('head.meta.description')}
+      />
 
-      <Navbar languages={props.languages} currentLocale={props.locale.locale} />
+      <Navbar languages={props.languages} currentLocale={props.locale} />
       <Header />
 
       <main className="main container mt-5">
