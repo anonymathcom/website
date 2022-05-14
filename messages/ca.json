@@ -65,19 +65,14 @@
     "main": {
       "title": "",
       "content": {
-        "one": "",
-        "two": "",
-        "three": "",
-        "translate": {
-          "poeditor": {
-            "title": "",
-            "content": ""
+        "paragraphs": [
+          {
+            "description": ""
           },
-          "sourcecode": {
-            "title": "",
-            "content": ""
+          {
+            "description": ""
           }
-        }
+        ]
       }
     }
   },
@@ -92,6 +87,14 @@
       "title": "",
       "content": {
         "paragraphs": [
+          {
+            "description": ""
+          },
+          {
+            "description": ""
+          }
+        ],
+        "tech": [
           {
             "description": ""
           },

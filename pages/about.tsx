@@ -43,6 +43,17 @@ function About(props: any) {
                   );
                 })}
             </section>
+            <section className="section box step">
+              {t.raw('main.content.tech').map(function (value: any, key: any) {
+                return (
+                  <p
+                    className="mb-4 is-size-6"
+                    key={`${key}`}
+                    dangerouslySetInnerHTML={{ __html: value.description }}
+                  ></p>
+                );
+              })}
+            </section>
           </div>
         </div>
       </main>

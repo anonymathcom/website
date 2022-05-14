@@ -65,19 +65,14 @@
     "main": {
       "title": "Contribuir",
       "content": {
-        "one": "Si tienes ideas para mejorar Anonymath puedes contárnoslas escribiendo un <em>issue</em> en nuestro <a href=\"https://github.com/isfegu/anonymath/issues\">repositorio de Github</a>.",
-        "two": "Si quieres desarrollar tu idea puedes hacerlo mediante un <em>pull request</em> en nuestro <a href=\"https://github.com/isfegu/anonymath\">repositorio de Github</a>. Te recomendamos que antes te leas el README que hay en nuestro repositorio.",
-        "three": "Puedes ayudar traduciendo Anonymath. Tienes dos formas de hacerlo, desde POEditor o desde el código fuente.",
-        "translate": {
-          "poeditor": {
-            "title": "Mediante POEditor",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium quam sed mi cursus, non dignissim mauris efficitur. Vestibulum vehicula sed leo ac vulputate. Etiam lectus urna, scelerisque ac dolor at, faucibus dignissim risus. Donec faucibus nibh purus, vel ultricies massa interdum ut. Donec orci dui, egestas sed elit eget, congue tristique risus. Sed quis urna vitae arcu aliquet vehicula. Etiam ut erat sit amet nunc vestibulum tincidunt vel vel leo. Nam sit amet lacus sagittis, viverra lectus id, lobortis augue. Etiam non dolor diam. Nunc a lobortis lorem, quis pharetra tortor. Pellentesque sit amet aliquet libero, in sagittis velit. Vivamus quis accumsan lectus, quis aliquam lectus. Donec varius egestas urna at faucibus. https://poeditor.com/"
+        "paragraphs": [
+          {
+            "description": "Si te gusta Anonymath puedes contribuir dándonos ideas, avisándonos de errores que encuentres en nuestra página web o traduciendo Anonymath a tu idioma."
           },
-          "sourcecode": {
-            "title": "Mediante el código fuente",
-            "content": "Para hacer cualquier modificación en las traducciones existentes o para añadir una nueva traducción desde el código fuente de Anonymath sigue las instrucciones que hay en el <a href=\"https://github.com/isfegu/anonymath#contribuir\">README del proyecto</a>."
+          {
+            "description": "Tienes toda la información de cómo contribuir en nuestra página en <a href=\"https://github.com/anonymathcom/anonymath\" target=\"_blank\">Github</a>."
           }
-        }
+        ]
       }
     }
   },
@@ -85,7 +80,7 @@
     "head": {
       "title": "Anonymath - Acerca de",
       "meta": {
-        "description": "Un poco de información sobre Anonymath."
+        "description": "Anonymath es una manera muy especial de compartir información. No se sabe lo que realmente pasa hasta que no lo has probado."
       }
     },
     "main": {
@@ -93,10 +88,21 @@
       "content": {
         "paragraphs": [
           {
+            "description": "En un presente tan digital, con tanta tecnología, tanta velocidad, tantas redes sociales, tanta exposición pública... queríamos hacer algo que no tuviera nada que ver con todo esto. Algo sencillo, simple, pausado, naíf..."
+          },
+          {
+            "description": "Anonymath es una manera muy especial de compartir información. No se sabe lo que realmente pasa hasta que no lo has probado."
+          }
+        ],
+        "tech": [
+          {
+            "description": "No usamos cookies ni realizamos ningún tipo de seguimiento."
+          },
+          {
             "description": "Este sitio web funciona gracias a <a href=\"https://nextjs.org/\" target=\"_blank\">Next.js</a>, <a href=\"https://bulma.io/\" target=\"_blank\">Bulma</a> y <a href=\"https://netlify.com\">Netlify</a>."
           },
           {
-            "description": "El código fuente y el contenido están disponibles en <a href=\"https://github.com/isfegu/anonymath\" target=\"_blank\">Github</a> bajo lincencia <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.es\" rel=\"license\" target=\"_blank\">Creative Commons BY-NC</a>."
+            "description": "El código fuente y el contenido están disponibles en <a href=\"https://github.com/anonymathcom/anonymath\" target=\"_blank\">Github</a> bajo lincencia <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.es\" rel=\"license\" target=\"_blank\">Creative Commons BY-NC</a>."
           }
         ]
       }

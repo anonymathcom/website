@@ -34,33 +34,17 @@ function Contribute(props: any) {
           <div className="column is-6-desktop is-8-tablet is-12-mobile">
             <section className="section box step first">
               <h2 className="has-text-centered">{t('main.title')}</h2>
-              <p
-                dangerouslySetInnerHTML={{ __html: t.raw('main.content.one') }}
-              ></p>
-              <p
-                dangerouslySetInnerHTML={{ __html: t.raw('main.content.two') }}
-              ></p>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: t.raw('main.content.three'),
-                }}
-              ></p>
-              <h3 className="is-size-4 is-family-serif mt-4">
-                {t('main.content.translate.poeditor.title')}
-              </h3>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: t.raw('main.content.translate.poeditor.content'),
-                }}
-              ></p>
-              <h3 className="is-size-4 is-family-serif mt-4">
-                {t('main.content.translate.sourcecode.title')}
-              </h3>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: t.raw('main.content.translate.sourcecode.content'),
-                }}
-              ></p>
+              {t
+                .raw('main.content.paragraphs')
+                .map(function (value: any, key: any) {
+                  return (
+                    <p
+                      className="mb-6"
+                      key={`${key}`}
+                      dangerouslySetInnerHTML={{ __html: value.description }}
+                    ></p>
+                  );
+                })}
               <p className="mt-6 has-text-centered">
                 <a
                   className="mx-2 image-link"
