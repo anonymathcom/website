@@ -31,7 +31,9 @@ function Home(props: any) {
   return (
     <>
       <Head>
-        <title>{t('head.title')}</title>
+        <title>
+          {t('head.title')} - {t('head.meta.description')}
+        </title>
         <meta name="description" content={t('head.meta.description')} />
       </Head>
 

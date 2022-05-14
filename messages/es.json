@@ -8,7 +8,7 @@
     "head": {
       "title": "Anonymath",
       "meta": {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+        "description": "Mensajes matemáticos, anónimos y analógicos."
       }
     },
     "steps": {
@@ -58,7 +58,7 @@
     "head": {
       "title": "Anonymath - Contribuir",
       "meta": {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+        "description": "Maneras de ayudar a mejorar Anonymath."
       }
     },
     "main": {
@@ -84,7 +84,7 @@
     "head": {
       "title": "Anonymath - Acerca de",
       "meta": {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
+        "description": "Un poco de información sobre Anonymath."
       }
     },
     "main": {
@@ -96,9 +96,6 @@
           },
           {
             "description": "El código fuente y el contenido están disponibles en <a href=\"https://github.com/isfegu/anonymath\" target=\"_blank\">Github</a> bajo lincencia <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.es\" rel=\"license\" target=\"_blank\">Creative Commons BY-NC</a>."
-          },
-          {
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt sapien faucibus metus aliquam varius eget ut velit. Morbi condimentum tristique felis."
           }
         ]
       }
