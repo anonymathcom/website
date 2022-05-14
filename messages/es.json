@@ -14,7 +14,8 @@
     "steps": {
       "one": {
         "title": "Imprimir",
-        "no-print": "¿No tienes impresora? no te preocupes utiliza una hoja en blanco.",
+        "description": "Para empezar debes descargar e imprimir la plantilla.",
+        "no-print": "¿No tienes impresora?, no te preocupes utiliza una hoja en blanco.",
         "download": "Descargar plantilla"
       },
       "two": {

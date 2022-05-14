@@ -47,6 +47,7 @@ function Home(props: any) {
             {/* STEP 1 */}
             <section className="section box step first odd">
               <h2>{t('steps.one.title')}</h2>
+              <p className="mb-5">{t('steps.one.description')}</p>
 
               <Link href="/anonymath.pdf" locale="">
                 <a
