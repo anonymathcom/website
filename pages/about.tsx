@@ -15,7 +15,7 @@ export const getStaticProps = async (params: any) => {
 };
 
 function About(props: any) {
-  const t = useTranslations('About');
+  const t = useTranslations('Pages.About');
   return (
     <>
       <HtmlHead

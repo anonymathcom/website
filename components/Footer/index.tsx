@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 const Footer = () => {
-  const t = useTranslations('Footer');
+  const t = useTranslations('Shared.Footer');
   return (
     <footer className="footer has-text-centered">
       <div className="is-size-6 mt-6">

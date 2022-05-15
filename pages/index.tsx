@@ -17,7 +17,7 @@ export const getStaticProps = async (params: any) => {
 };
 
 function Home(props: any) {
-  const t = useTranslations('Home');
+  const t = useTranslations('Pages.Home');
   const smoothScrollTo = (idName: String) => {
     if (typeof window !== 'undefined') {
       const element = document.getElementById(`${idName}`);

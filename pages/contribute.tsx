@@ -17,7 +17,7 @@ export const getStaticProps = async (params: any) => {
 };
 
 function Contribute(props: any) {
-  const t = useTranslations('Contribute');
+  const t = useTranslations('Pages.Contribute');
   return (
     <>
       <HtmlHead

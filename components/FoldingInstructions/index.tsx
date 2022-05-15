@@ -19,7 +19,7 @@ yarn add react-responsive-carousel
 */
 
 const FoldingInstructions = () => {
-  const t = useTranslations('Home.steps.three.steps');
+  const t = useTranslations('Pages.Home.steps.three.steps');
 
   const handleCarouselChange = () => {
     const controlArrowRightElement =
