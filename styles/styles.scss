@@ -1,3 +1,4 @@
+@import './node_modules/nord/src/sass/nord.scss';
 @import 'variables.scss';
 
 header {
@@ -175,4 +176,79 @@ a.navbar-link:hover {
 
 .subtitle {
   color: $dark-grey;
+}
+
+/* NORD MODE */
+
+[data-theme='nord'],
+[data-theme='nord'] body {
+  background-color: $nord0;
+  color: $nord8;
+
+  .navbar-menu {
+    background-color: $nord1;
+    @include from(1024px) {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  .step p,
+  footer .footer-links a,
+  h2,
+  h3,
+  a {
+    color: $nord8;
+  }
+
+  .section a:not(.image-link) {
+    border-bottom: 2px solid $nord8;
+  }
+
+  .navbar-dropdown,
+  .navbar-dropdown a.is-active,
+  .carousel-root,
+  .box {
+    background-color: $nord1;
+    color: $nord8;
+  }
+
+  .navbar-dropdown a.navbar-item:focus,
+  .navbar-dropdown a.navbar-item:hover {
+    background-color: $nord8;
+    color: $nord0;
+  }
+
+  .button.is-dark {
+    background-color: $nord8;
+    color: $nord0;
+    &:hover {
+      background-color: $nord9;
+    }
+  }
+
+  .subtitle,
+  .step p {
+    color: $nord4;
+  }
+
+  footer .footer-links a {
+    border-bottom: 2px solid $nord8;
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+
+  .title img,
+  .step h2::after,
+  .carousel.carousel-slider .control-arrow,
+  .separator,
+  .section.box img,
+  .navbar img {
+    filter: invert(83%) sepia(15%) saturate(739%) hue-rotate(150deg)
+      brightness(87%) contrast(86%);
+  }
+
+  .carousel-slider .slide figure {
+    padding: 1.5em;
+  }
 }
