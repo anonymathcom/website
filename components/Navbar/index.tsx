@@ -66,7 +66,7 @@ const Navbar = ({ languages, currentLocale }: any): any => {
                     setTheme('nord');
                   }}
                 >
-                  {t('themes.dark-mode')}
+                  {t('themes.dark-mode')} {theme}
                 </a>
               </Link>
               <Link href="/">
@@ -78,7 +78,7 @@ const Navbar = ({ languages, currentLocale }: any): any => {
                     setTheme('light');
                   }}
                 >
-                  {t('themes.light-mode')}
+                  {t('themes.light-mode')} {theme}
                 </a>
               </Link>
             </div>
