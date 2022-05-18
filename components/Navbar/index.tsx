@@ -60,25 +60,25 @@ const Navbar = ({ languages, currentLocale }: any): any => {
               <Link href="/">
                 <a
                   className={`navbar-item ${
-                    theme == 'nord' ? 'is-active' : ''
+                    theme == 'dark' ? 'is-active' : ''
                   }`}
                   onClick={() => {
-                    setTheme('nord');
+                    setTheme('dark');
                   }}
                 >
-                  {t('themes.dark-mode')} {theme}
+                  {t('themes.dark-mode')}
                 </a>
               </Link>
               <Link href="/">
                 <a
                   className={`navbar-item ${
-                    theme != 'nord' ? 'is-active' : ''
+                    theme != 'dark' ? 'is-active' : ''
                   }`}
                   onClick={() => {
                     setTheme('light');
                   }}
                 >
-                  {t('themes.light-mode')} {theme}
+                  {t('themes.light-mode')}
                 </a>
               </Link>
             </div>
