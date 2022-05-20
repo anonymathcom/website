@@ -6,10 +6,6 @@ test.describe.parallel(
   () => {
     locales.forEach(function (locale: string) {
       test(locale.toLocaleUpperCase(), async ({ page }) => {
-        {
-          /* https://www.youtube.com/watch?v=VMl8aV-ddMA */
-        }
-
         let url = process.env.E2E_START_URL ?? 'http://localhost:3000';
         if (defaultLocale != locale) {
           url = url + '/' + locale;
@@ -33,10 +29,6 @@ test.describe.parallel(
   () => {
     locales.forEach(function (locale: string) {
       test(locale.toLocaleUpperCase(), async ({ page }) => {
-        {
-          /* https://www.youtube.com/watch?v=VMl8aV-ddMA */
-        }
-
         let url = process.env.E2E_START_URL ?? 'http://localhost:3000';
         if (defaultLocale != locale) {
           url = url + '/' + locale;
