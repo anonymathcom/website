@@ -59,6 +59,7 @@ const Navbar = ({ languages, currentLocale }: any): any => {
             <div className="navbar-dropdown is-right is-boxed">
               <Link href="/">
                 <a
+                  id="dark-option"
                   className={`navbar-item ${
                     theme == 'dark' ? 'is-active' : ''
                   }`}
@@ -71,6 +72,7 @@ const Navbar = ({ languages, currentLocale }: any): any => {
               </Link>
               <Link href="/">
                 <a
+                  id="light-option"
                   className={`navbar-item ${
                     theme != 'dark' ? 'is-active' : ''
                   }`}
