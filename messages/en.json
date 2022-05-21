@@ -2,7 +2,11 @@
   "language": "English",
   "Header": {
     "title": "Anonymath",
-    "subtitle": ""
+    "subtitle": "",
+    "themes": {
+      "dark-mode": "",
+      "light-mode": ""
+    }
   },
   "Home": {
     "head": {

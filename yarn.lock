@@ -3771,6 +3771,11 @@ next-intl@^2.4.0:
   dependencies:
     use-intl "^2.7.2"
 
+next-themes@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.2.0.tgz#fdc507f61e95b3ae513dee8d4783bcec8c02e3a3"
+  integrity sha512-myhpDL4vadBD9YDSHiewqvzorGzB03N84e+3LxCwHRlM/hiBOaW+UsKsQojQAzC7fdcJA0l2ppveXcYaVV+hxQ==
+
 next@^12.1.6:
   version "12.1.6"
   resolved "https://registry.yarnpkg.com/next/-/next-12.1.6.tgz#eb205e64af1998651f96f9df44556d47d8bbc533"
@@ -3803,6 +3808,11 @@ node-releases@^2.0.3:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.4.tgz#f38252370c43854dc48aa431c766c6c398f40476"
   integrity sha512-gbMzqQtTtDz/00jQzZ21PQzdI9PyLYqUSvD0p3naOhX4odFji0ZxYdnVwPTxmSwkmxhcFImpozceidSG+AgoPQ==
+
+nord@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/nord/-/nord-0.2.1.tgz#044ed8e00331c84a96dc4c670f080a72572c3cf9"
+  integrity sha1-BE7Y4AMxyEqW3ExnDwgKclcsPPk=
 
 normalize-package-data@^2.5.0:
   version "2.5.0"
