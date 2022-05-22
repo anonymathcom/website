@@ -17,7 +17,7 @@ export const getStaticProps = async (params: any) => {
 };
 
 const Navbar = ({ languages, currentLocale }: any): any => {
-  const t = useTranslations('Header');
+  const t = useTranslations('Shared.Header');
 
   let [isActive, setisActive] = useState(false);
   const burgerHandler = () => {

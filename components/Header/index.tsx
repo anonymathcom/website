@@ -4,7 +4,7 @@ import logo from '../../public/logo.svg';
 import { useTranslations } from 'next-intl';
 
 const Header = () => {
-  const t = useTranslations('Header');
+  const t = useTranslations('Shared.Header');
   return (
     <header className="header has-text-centered">
       <h1 className="title">

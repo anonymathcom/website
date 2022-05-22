@@ -3,6 +3,15 @@ import Header from '../components/Header';
 import HtmlHead from '../components/HtmlHead';
 import Navbar from '../components/Navbar';
 import { useTranslations } from 'next-intl';
+import nextConfig from '../next.config';
+import { getPageName } from '../lib/locales';
+
+export const getStaticPaths = async () => {
+  return {
+    paths: nextConfig.flatRoutes,
+    fallback: false,
+  };
+};
 
 export const getStaticProps = async (params: any) => {
   return {
@@ -10,12 +19,19 @@ export const getStaticProps = async (params: any) => {
       messages: (await import(`../messages/${params.locale}.json`)).default,
       locale: params.locale,
       languages: process.env.languages,
+      routes: nextConfig.routes,
+      pageName: getPageName(
+        params.locale,
+        params.params.pages[0],
+        nextConfig.routes,
+        nextConfig.i18n.defaultLocale
+      ),
     },
   };
 };
 
-function About(props: any) {
-  const t = useTranslations('About');
+function Page(props: any) {
+  const t = useTranslations('Pages.' + props.pageName);
   return (
     <>
       <HtmlHead
@@ -37,30 +53,20 @@ function About(props: any) {
                 .map(function (value: any, key: any) {
                   return (
                     <p
+                      className="mb-4"
                       key={`${key}`}
                       dangerouslySetInnerHTML={{ __html: value.description }}
                     ></p>
                   );
                 })}
             </section>
-            <section className="section box step">
-              {t.raw('main.content.tech').map(function (value: any, key: any) {
-                return (
-                  <p
-                    className="mb-4 is-size-6"
-                    key={`${key}`}
-                    dangerouslySetInnerHTML={{ __html: value.description }}
-                  ></p>
-                );
-              })}
-            </section>
           </div>
         </div>
       </main>
 
-      <Footer />
+      <Footer currentLocale={props.locale} routes={props.routes} />
     </>
   );
 }
 
-export default About;
+export default Page;

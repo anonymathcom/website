@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import HtmlHead from '../components/HtmlHead';
 import Navbar from '../components/Navbar';
 import { useTranslations } from 'next-intl';
+import nextConfig from '../next.config';
 
 export const getStaticProps = async (params: any) => {
   return {
@@ -12,12 +13,13 @@ export const getStaticProps = async (params: any) => {
       messages: (await import(`../messages/${params.locale}.json`)).default,
       locale: params.locale,
       languages: process.env.languages,
+      routes: nextConfig.routes,
     },
   };
 };
 
 function Home(props: any) {
-  const t = useTranslations('Home');
+  const t = useTranslations('Pages.Home');
   const smoothScrollTo = (idName: String) => {
     if (typeof window !== 'undefined') {
       const element = document.getElementById(`${idName}`);
@@ -95,7 +97,7 @@ function Home(props: any) {
         </div>
       </main>
 
-      <Footer />
+      <Footer currentLocale={props.locale} routes={props.routes} />
     </>
   );
 }

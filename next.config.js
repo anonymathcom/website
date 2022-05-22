@@ -3,8 +3,12 @@ const path = require('path');
 const locales = require('./lib/locales');
 
 const localeDirectory = './messages';
-const localeData = locales.getLocaleDataFromLocaleFiles(localeDirectory);
-const i18nLocales = locales.getI18nLocales(localeData);
+const defaultLocale = 'en';
+const languageData =
+  locales.getLanguageISOAndNameFromLocaleFiles(localeDirectory);
+const i18nLocales = locales.getI18nLocales(languageData);
+const routes = locales.getLocalizedRoutes(localeDirectory, defaultLocale);
+const flatRoutes = locales.getFlatRoutes(localeDirectory, defaultLocale);
 
 const nextConfig = {
   webpack: { fs: 'empty' },
@@ -14,11 +18,13 @@ const nextConfig = {
   },
   i18n: {
     locales: i18nLocales,
-    defaultLocale: 'en',
+    defaultLocale: defaultLocale,
   },
   env: {
-    languages: localeData,
+    languages: languageData,
   },
+  routes: routes,
+  flatRoutes: flatRoutes,
 };
 
 module.exports = nextConfig;
