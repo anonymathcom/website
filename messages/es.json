@@ -3,7 +3,7 @@
   "Shared": {
     "Header": {
       "title": "Anonymath",
-      "subtitle": "Mensajes matemáticos, anónimos y analógicos.",
+      "subtitle": "Mensajes matemáticos, anónimos, analógicos...",
       "themes": {
         "dark-mode": "Modo oscuro",
         "light-mode": "Modo claro"
@@ -20,23 +20,33 @@
       "head": {
         "title": "Anonymath",
         "meta": {
-          "description": "Mensajes matemáticos, anónimos y analógicos."
+          "description": "Mensajes matemáticos, anónimos, analógicos. El 'bookcrosing' de las matemáticas."
         }
       },
       "steps": {
         "one": {
-          "title": "Imprimir",
-          "description": "Para empezar debes descargar e imprimir la plantilla.",
-          "no-print": "¿No tienes impresora?, no te preocupes utiliza una hoja en blanco.",
-          "download": "Descargar plantilla"
+          "title": "Escribir",
+          "content": {
+            "paragraphs": [
+              {
+                "description": "Toma una hoja en blanco y escribe algo sobre las matemáticas."
+              },
+              {
+                "description": "Por ejemplo un problema que no sabes cómo resolver o uno que te ha gustado y has resuelto con mucho esfuerzo."
+              },
+              {
+                "description": "También puedes escribir esos apuntes que has hecho y que son perfectos para estudiar algún tema complicado. O por qué no, lo mucho que odias o amas las matemáticas. Lo que tú quieras."
+              },
+              {
+                "description": "Tenemos una plantilla para que escribas tu mensaje, puedes imprimirla o usarla de referencia."
+              }
+            ]
+          },
+          "download": "Ver plantilla"
         },
         "two": {
-          "title": "Escribir",
-          "description": "En la plantilla, puedes escribir lo que quieras: un problema que no tienes ni idea de cómo resolverlo, una formula que te ha gustado, un truco para resolver ecuaciones, lo mal o lo bien que se explica tu profesor, lo mucho que odias o amas las matemáticas. Tú mismo."
-        },
-        "three": {
-          "title": "Doblar",
-          "description": "Estas son las instrucciones para doblar la hoja que has imprimido y en la que has escrito tu mensaje matemático.",
+          "title": "Plegar",
+          "description": "Estas son las instrucciones para plegar la hoja en la que has escrito tu mensaje de tal forma que su contenido quede oculto. La plantilla puede ayudarte en el proceso.",
           "steps": {
             "one": {
               "title": "Primer paso"
@@ -61,9 +71,15 @@
             }
           }
         },
-        "four": {
-          "title": "Liberar",
-          "description": "Ahora \"libéralo\", puedes dejar tu mensaje matemático donde quieras."
+        "three": {
+          "title": "Compartir",
+          "content": {
+            "paragraphs": [
+              {
+                "description": "Ahora es el momento de elegir el lugar adecuado y dejar allí tu mensaje matemático. Qué sucederá a partir de ese momento será cosa del azar y de la probabilidad."
+              }
+            ]
+          }
         }
       }
     },
