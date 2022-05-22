@@ -1,119 +1,96 @@
 {
   "language": "Español",
-  "Header": {
-    "title": "Anonymath",
-    "subtitle": "Mensajes matemáticos, anónimos y analógicos.",
-    "themes": {
-      "dark-mode": "Modo oscuro",
-      "light-mode": "Modo claro"
-    }
-  },
-  "Home": {
-    "head": {
+  "Shared": {
+    "Header": {
       "title": "Anonymath",
-      "meta": {
-        "description": "Mensajes matemáticos, anónimos y analógicos."
+      "subtitle": "Mensajes matemáticos, anónimos y analógicos.",
+      "themes": {
+        "dark-mode": "Modo oscuro",
+        "light-mode": "Modo claro"
       }
     },
-    "steps": {
-      "one": {
-        "title": "Imprimir",
-        "description": "Para empezar debes descargar e imprimir la plantilla.",
-        "no-print": "¿No tienes impresora?, no te preocupes utiliza una hoja en blanco.",
-        "download": "Descargar plantilla"
-      },
-      "two": {
-        "title": "Escribir",
-        "description": "En la plantilla, puedes escribir lo que quieras: un problema que no tienes ni idea de cómo resolverlo, una formula que te ha gustado, un truco para resolver ecuaciones, lo mal o lo bien que se explica tu profesor, lo mucho que odias o amas las matemáticas. Tú mismo."
-      },
-      "three": {
-        "title": "Doblar",
-        "description": "Estas son las instrucciones para doblar la hoja que has imprimido y en la que has escrito tu mensaje matemático.",
-        "steps": {
-          "one": {
-            "title": "Primer paso"
-          },
-          "two": {
-            "title": "Segundo paso"
-          },
-          "three": {
-            "title": "Tercer paso"
-          },
-          "four": {
-            "title": "Cuarto paso"
-          },
-          "five": {
-            "title": "Quinto paso"
-          },
-          "six": {
-            "title": "Sexto paso"
-          },
-          "seven": {
-            "title": "Septimo paso"
-          }
+    "Footer": {
+      "contribute": "Contribuir",
+      "cookies": "No usamos cookies ni realizamos ningún tipo de seguimiento."
+    }
+  },
+  "Pages": {
+    "Home": {
+      "path": "/",
+      "head": {
+        "title": "Anonymath",
+        "meta": {
+          "description": "Mensajes matemáticos, anónimos y analógicos."
         }
       },
-      "four": {
-        "title": "Liberar",
-        "description": "Ahora \"libéralo\", puedes dejar tu mensaje matemático donde quieras."
-      }
-    }
-  },
-  "Contribute": {
-    "head": {
-      "title": "Anonymath - Contribuir",
-      "meta": {
-        "description": "Maneras de ayudar a mejorar Anonymath."
+      "steps": {
+        "one": {
+          "title": "Imprimir",
+          "description": "Para empezar debes descargar e imprimir la plantilla.",
+          "no-print": "¿No tienes impresora?, no te preocupes utiliza una hoja en blanco.",
+          "download": "Descargar plantilla"
+        },
+        "two": {
+          "title": "Escribir",
+          "description": "En la plantilla, puedes escribir lo que quieras: un problema que no tienes ni idea de cómo resolverlo, una formula que te ha gustado, un truco para resolver ecuaciones, lo mal o lo bien que se explica tu profesor, lo mucho que odias o amas las matemáticas. Tú mismo."
+        },
+        "three": {
+          "title": "Doblar",
+          "description": "Estas son las instrucciones para doblar la hoja que has imprimido y en la que has escrito tu mensaje matemático.",
+          "steps": {
+            "one": {
+              "title": "Primer paso"
+            },
+            "two": {
+              "title": "Segundo paso"
+            },
+            "three": {
+              "title": "Tercer paso"
+            },
+            "four": {
+              "title": "Cuarto paso"
+            },
+            "five": {
+              "title": "Quinto paso"
+            },
+            "six": {
+              "title": "Sexto paso"
+            },
+            "seven": {
+              "title": "Septimo paso"
+            }
+          }
+        },
+        "four": {
+          "title": "Liberar",
+          "description": "Ahora \"libéralo\", puedes dejar tu mensaje matemático donde quieras."
+        }
       }
     },
-    "main": {
-      "title": "Contribuir",
-      "content": {
-        "paragraphs": [
-          {
-            "description": "Si te gusta Anonymath puedes contribuir dándonos ideas, avisándonos de errores que encuentres en nuestra página web o traduciendo Anonymath a tu idioma."
-          },
-          {
-            "description": "Tienes toda la información de cómo contribuir en nuestra página en <a href=\"https://github.com/anonymathcom/anonymath\" target=\"_blank\">Github</a>."
-          }
-        ]
+    "Contribute": {
+      "path": "contribuir",
+      "head": {
+        "title": "Anonymath - Contribuir",
+        "meta": {
+          "description": "Maneras de ayudar a mejorar Anonymath."
+        }
+      },
+      "main": {
+        "title": "Contribuir",
+        "content": {
+          "paragraphs": [
+            {
+              "description": "Si te gusta Anonymath puedes contribuir escribiendo y liberando muchos mensajes."
+            },
+            {
+              "description": "También puedes ayudar dándonos ideas, avisándonos de errores que encuentres en nuestra página web o traduciendo Anonymath a tu idioma."
+            },
+            {
+              "description": "Tienes toda la información de cómo contribuir en nuestra página en <a href=\"https://github.com/anonymathcom/anonymath\" target=\"_blank\">Github</a>."
+            }
+          ]
+        }
       }
     }
-  },
-  "About": {
-    "head": {
-      "title": "Anonymath - Acerca de",
-      "meta": {
-        "description": "Anonymath es una manera muy especial de compartir información. No se sabe lo que realmente pasa hasta que no lo has probado."
-      }
-    },
-    "main": {
-      "title": "Acerca de",
-      "content": {
-        "paragraphs": [
-          {
-            "description": "En un presente tan digital, con tanta tecnología, tanta velocidad, tantas redes sociales, tanta exposición pública... queríamos hacer algo que no tuviera nada que ver con todo esto. Algo sencillo, simple, pausado, naíf..."
-          },
-          {
-            "description": "Anonymath es una manera muy especial de compartir información. No se sabe lo que realmente pasa hasta que no lo has probado."
-          }
-        ],
-        "tech": [
-          {
-            "description": "No usamos cookies ni realizamos ningún tipo de seguimiento."
-          },
-          {
-            "description": "Este sitio web funciona gracias a <a href=\"https://nextjs.org/\" target=\"_blank\">Next.js</a>, <a href=\"https://bulma.io/\" target=\"_blank\">Bulma</a> y <a href=\"https://netlify.com\">Netlify</a>."
-          },
-          {
-            "description": "El código fuente y el contenido están disponibles en <a href=\"https://github.com/anonymathcom/anonymath\" target=\"_blank\">Github</a> bajo lincencia <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.es\" rel=\"license\" target=\"_blank\">Creative Commons BY-NC</a>."
-          }
-        ]
-      }
-    }
-  },
-  "Footer": {
-    "about": "Acerca de...",
-    "contribute": "Contribuir"
   }
 }
