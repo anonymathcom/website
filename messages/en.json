@@ -26,15 +26,25 @@
       "steps": {
         "one": {
           "title": "",
-          "description": "",
-          "no-print": "",
+          "content": {
+            "paragraphs": [
+              {
+                "description": ""
+              },
+              {
+                "description": ""
+              },
+              {
+                "description": ""
+              },
+              {
+                "description": ""
+              }
+            ]
+          },
           "download": ""
         },
         "two": {
-          "title": "",
-          "description": ""
-        },
-        "three": {
           "title": "",
           "description": "",
           "steps": {
@@ -61,9 +71,15 @@
             }
           }
         },
-        "four": {
+        "three": {
           "title": "",
-          "description": ""
+          "content": {
+            "paragraphs": [
+              {
+                "description": ""
+              }
+            ]
+          }
         }
       }
     },
@@ -79,6 +95,9 @@
         "title": "",
         "content": {
           "paragraphs": [
+            {
+              "description": ""
+            },
             {
               "description": ""
             },
