@@ -1,115 +1,89 @@
 {
   "language": "English",
-  "Header": {
-    "title": "Anonymath",
-    "subtitle": ""
-  },
-  "Home": {
-    "head": {
+  "Shared": {
+    "Header": {
       "title": "Anonymath",
-      "meta": {
-        "description": ""
-      }
+      "subtitle": ""
     },
-    "steps": {
-      "one": {
-        "title": "",
-        "description": "",
-        "no-print": "",
-        "download": ""
-      },
-      "two": {
-        "title": "",
-        "description": ""
-      },
-      "three": {
-        "title": "",
-        "description": "",
-        "steps": {
-          "one": {
-            "title": ""
-          },
-          "two": {
-            "title": ""
-          },
-          "three": {
-            "title": ""
-          },
-          "four": {
-            "title": ""
-          },
-          "five": {
-            "title": ""
-          },
-          "six": {
-            "title": ""
-          },
-          "seven": {
-            "title": ""
-          }
+    "Footer": {
+      "contribute": "Contribute",
+      "cookies": ""
+    }
+  },
+  "Pages": {
+    "Home": {
+      "path": "/",
+      "head": {
+        "title": "Anonymath",
+        "meta": {
+          "description": ""
         }
       },
-      "four": {
+      "steps": {
+        "one": {
+          "title": "",
+          "description": "",
+          "no-print": "",
+          "download": ""
+        },
+        "two": {
+          "title": "",
+          "description": ""
+        },
+        "three": {
+          "title": "",
+          "description": "",
+          "steps": {
+            "one": {
+              "title": ""
+            },
+            "two": {
+              "title": ""
+            },
+            "three": {
+              "title": ""
+            },
+            "four": {
+              "title": ""
+            },
+            "five": {
+              "title": ""
+            },
+            "six": {
+              "title": ""
+            },
+            "seven": {
+              "title": ""
+            }
+          }
+        },
+        "four": {
+          "title": "",
+          "description": ""
+        }
+      }
+    },
+    "Contribute": {
+      "path": "contribute",
+      "head": {
         "title": "",
-        "description": ""
+        "meta": {
+          "description": ""
+        }
+      },
+      "main": {
+        "title": "",
+        "content": {
+          "paragraphs": [
+            {
+              "description": ""
+            },
+            {
+              "description": ""
+            }
+          ]
+        }
       }
     }
-  },
-  "Contribute": {
-    "head": {
-      "title": "",
-      "meta": {
-        "description": ""
-      }
-    },
-    "main": {
-      "title": "",
-      "content": {
-        "paragraphs": [
-          {
-            "description": ""
-          },
-          {
-            "description": ""
-          }
-        ]
-      }
-    }
-  },
-  "About": {
-    "head": {
-      "title": "",
-      "meta": {
-        "description": ""
-      }
-    },
-    "main": {
-      "title": "",
-      "content": {
-        "paragraphs": [
-          {
-            "description": ""
-          },
-          {
-            "description": ""
-          }
-        ],
-        "tech": [
-          {
-            "description": ""
-          },
-          {
-            "description": ""
-          },
-          {
-            "description": ""
-          }
-        ]
-      }
-    }
-  },
-  "Footer": {
-    "about": "About...",
-    "contribute": "Contribute"
   }
 }
