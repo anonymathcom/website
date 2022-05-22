@@ -92,27 +92,31 @@ node ➜ /workspaces/anonymath (master) $ yarn test:unit
 
 We use [Playwright](https://playwright.dev/) for End-to-End Testing. The tests are in the _tests/e2e_ directory and they run in a _Docker_ container outside of the development environment.
 
-**Before running the tests for the first time** you must build the image:
+**Before running the tests for the first time** you must build the Docker image (placed in _tests/e2e/container_):
 
 ```bash
 ~ make build-test-environment
 ```
 
-> That container is created from a _Docker_ which is in _tests/e2e/container_.
+Open a container:
 
-Once the image is built you can run the tests.
+```bash
+~ make open-test-environment
+```
 
-1. While the project is accessible in [http://localhost:3000](http://localhost:3000), start the End-to-End sandbox container:
+and run the following command inside the container:
 
-   ```bash
-   ~ make open-test-environment
-   ```
+```bash
+/anonymath$ npx playwright install
+```
 
-2. Inside the End-to-End sandbox container, run:
+Once the image is built you can run the tests whenever you want running:
 
-   ```bash
-   /anonymath# yarn test:e2e
-   ```
+```bash
+~ make run-e2e-tests
+```
+
+> Remember, to run End-to-End tests, the project **must** be a running in [http://localhost:3000](http://localhost:3000)
 
 ### 4.- Pull Request
 
@@ -124,22 +128,18 @@ Each _pull request_ made to the _staging_ branch involves the building of the wh
 
 From Anonymath we will be very happy and grateful if you want to translate [anonymath.com](https://anonymath.com) into your own language.
 
-There are two ways to translate Anonymath:
-
-1. Into the source code.
-2. Through PoEditor.
-
-### 1.- Into the Source Code
+Follow the next steps to translate anonymath.com:
 
 1. Make a copy of the file _messages/en.json_ (or the language file you want to use as starting point) using the identifier as the file name [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) (two-letter) for your language. By instance, _messages/ki.json_ for the Kikuyu language.
-2. EIn line 2 you will see the key _"language"_, its value should be the name of your language written in your language. For instance, _français_ for French.
-3. Translate the rest of the keys in the file.
-4. Do a _pull request_ as explained in the section _[4.- Pull request](#4--pull-request)_.
 
-### 2.- Through PoEditor
+2. In line 2 you will see the key _"language"_, its value should be the name of your language written in your language. For instance, _français_ for French.
 
-PoEditor is an online service to manage translations.
+3. Translate the rest of the keys in the file. Pay attention to the key _path_ inside _Contribute_ section, the value for this key will be the route of the _contribute_ page. For instance, https://anonymath.com/es/contribuir. The word used there **must** be a valid URL.
 
-1. If you don't have a PoEditor account, create one.
+4. Update unit tests (_tests/unit/locales.tests.js_) adding more values to the expected data in the current tests.
 
-@TODO: Finish this section
+5. Do a pull request as explained in the section _[4.- Pull request](#4--pull-request)_.
+
+## License
+
+The contents and source code of anonymath.com are under [Creative Commons BY-NC](https://creativecommons.org/licenses/by-nc/4.0/deed) license.
