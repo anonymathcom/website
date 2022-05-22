@@ -3,7 +3,11 @@
   "Shared": {
     "Header": {
       "title": "Anonymath",
-      "subtitle": "Mensajes matemáticos, anónimos y analógicos."
+      "subtitle": "Mensajes matemáticos, anónimos y analógicos.",
+      "themes": {
+        "dark-mode": "Modo oscuro",
+        "light-mode": "Modo claro"
+      }
     },
     "Footer": {
       "contribute": "Contribuir",

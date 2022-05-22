@@ -3,7 +3,11 @@
   "Shared": {
     "Header": {
       "title": "Anonymath",
-      "subtitle": ""
+      "subtitle": "",
+      "themes": {
+        "dark-mode": "",
+        "light-mode": ""
+      }
     },
     "Footer": {
       "contribute": "Contribute",
