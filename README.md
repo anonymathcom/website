@@ -139,3 +139,7 @@ Follow the next steps to translate anonymath.com:
 4. Update unit tests (_tests/unit/locales.tests.js_) adding more values to the expected data in the current tests.
 
 5. Do a pull request as explained in the section _[4.- Pull request](#4--pull-request)_.
+
+## License
+
+The contents and source code of anonymath.com are under [Creative Commons BY-NC](https://creativecommons.org/licenses/by-nc/4.0/deed) license.
