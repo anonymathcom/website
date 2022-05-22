@@ -46,8 +46,17 @@ function Home(props: any) {
             {/* STEP 1 */}
             <section className="section box step first odd">
               <h2>{t('steps.one.title')}</h2>
-              <p className="mb-5">{t('steps.one.description')}</p>
-
+              {t
+                .raw('steps.one.content.paragraphs')
+                .map(function (value: any, key: any) {
+                  return (
+                    <p
+                      className="mb-4"
+                      key={`${key}`}
+                      dangerouslySetInnerHTML={{ __html: value.description }}
+                    ></p>
+                  );
+                })}
               <Link href="/anonymath.pdf" locale="">
                 <a
                   className="button is-dark mb-5"
@@ -57,7 +66,6 @@ function Home(props: any) {
                   {t('steps.one.download')}
                 </a>
               </Link>
-              <p>{t('steps.one.no-print')}</p>
             </section>
 
             <div
@@ -66,9 +74,10 @@ function Home(props: any) {
             ></div>
 
             {/* STEP 2 */}
-            <section className="section box step even" id="step-2">
+            <section className="section box-alt step" id="step-2">
               <h2>{t('steps.two.title')}</h2>
-              <p>{t('steps.two.description')}</p>
+              <p className="mb-5">{t('steps.two.description')}</p>
+              <FoldingInstructions />
             </section>
 
             <div
@@ -77,21 +86,19 @@ function Home(props: any) {
             ></div>
 
             {/* STEP 3 */}
-            <section className="section box-alt step" id="step-3">
+            <section className="section box step odd" id="step-3">
               <h2>{t('steps.three.title')}</h2>
-              <p className="mb-5">{t('steps.three.description')}</p>
-              <FoldingInstructions />
-            </section>
-
-            <div
-              className="separator"
-              onClick={() => smoothScrollTo('step-4')}
-            ></div>
-
-            {/* STEP 4 */}
-            <section className="section box step odd" id="step-4">
-              <h2>{t('steps.four.title')}</h2>
-              <p>{t('steps.four.description')}</p>
+              {t
+                .raw('steps.three.content.paragraphs')
+                .map(function (value: any, key: any) {
+                  return (
+                    <p
+                      className="mb-4"
+                      key={`${key}`}
+                      dangerouslySetInnerHTML={{ __html: value.description }}
+                    ></p>
+                  );
+                })}
             </section>
           </div>
         </div>
