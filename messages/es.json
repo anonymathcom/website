@@ -3,7 +3,7 @@
   "Shared": {
     "Header": {
       "title": "Anonymath",
-      "subtitle": "Mensajes matemáticos, anónimos, analógicos...",
+      "subtitle": "Mensajes matemáticos, anónimos y analógicos.",
       "themes": {
         "dark-mode": "Modo oscuro",
         "light-mode": "Modo claro"
@@ -96,7 +96,7 @@
         "content": {
           "paragraphs": [
             {
-              "description": "Si te gusta Anonymath puedes contribuir escribiendo y liberando muchos mensajes."
+              "description": "Si te gusta Anonymath puedes contribuir escribiendo y compartiendo muchos mensajes."
             },
             {
               "description": "También puedes ayudar dándonos ideas, avisándonos de errores que encuentres en nuestra página web o traduciendo Anonymath a tu idioma."
