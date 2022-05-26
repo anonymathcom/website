@@ -13,13 +13,13 @@ The main technologies it uses are:
 
 You can contribute by translating Anonymath into your language. To do so, you must follow the instructions that you will find in the [Translate Anonymath](#translate-anonymath) section at the end of this document.
 
-If you have an idea or have found a bug you can write us an _issue_ or you can develop that idea or fix that bug yourself. In this case you must follow the following instructions:
+If you have an idea or have found a bug you can write us an _[issue](https://github.com/anonymathcom/website/issues)_ or you can develop that idea or fix that bug yourself. In this case you must follow the following instructions:
 
 0. Read **all** of this README.
-1. Use the development environment of the project.
+1. Use the development environment provided by the project.
 2. Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
-3. Use **unit** and/or **E2E** tests.
-4. Maken _pull request_ from a fork of this repository.
+3. Write **unit** and/or **E2E** tests.
+4. Make a _pull request_ with your changes to the _staging_ branch.
 
 ### 1.- Development Environment
 
@@ -61,7 +61,7 @@ Anonymath will be accessible from [http://localhost:3000/](http://localhost:3000
 
 The environment installs in the remote container the extension [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and configures it to format Typescript, Javascript and JSON code when saving any modified file.
 
-The environment uses the following [Git hooks](https://git-scm.com/docs/githooks) managed by [Husky](https://typicode.github.io/husky). You can find them in the directory _.husky_:
+The environment uses [Git hooks](https://git-scm.com/docs/githooks) managed by [Husky](https://typicode.github.io/husky). You can find them in the directory _.husky_:
 
 - **commit-msg**: Checks if the commit message conforms to Conventional Commits.
 - **pre-commit**:
@@ -74,7 +74,7 @@ In order to run Git hooks, it is necessary to have certain dependencies installe
 
 ### 2.- Conventional Commits
 
-Any commit **must** conform the Conventional Commits. In the file [commitlint.config.js] you can check the validation rules.
+Any commit **must** conform the Conventional Commits. In the file [commitlint.config.js](commitlint.config.js) you can check the validation rules.
 
 ### 3.- Tests
 
@@ -92,7 +92,7 @@ node ➜ /workspaces/anonymath (master) $ yarn test:unit
 
 We use [Playwright](https://playwright.dev/) for End-to-End Testing. The tests are in the _tests/e2e_ directory and they run in a _Docker_ container outside of the development environment.
 
-**Before running the tests for the first time** you must build the Docker image (placed in _tests/e2e/container_):
+**Before running the tests for the first time** you **must** build the Docker image (placed in _tests/e2e/container_):
 
 ```bash
 ~ make build-test-environment
@@ -116,13 +116,13 @@ Once the image is built you can run the tests whenever you want running:
 ~ make run-e2e-tests
 ```
 
-> Remember, to run End-to-End tests, the project **must** be a running in [http://localhost:3000](http://localhost:3000)
+> Remember, to run End-to-End tests, the project **must** be running in [http://localhost:3000](http://localhost:3000)
 
 ### 4.- Pull Request
 
-Any contributions must be incorporated through a _pull request_ to the branch _staging_ from a fork of the main repository. In your repository use all the commits you want but before making a pull request it is better to do an interactive rebase to join, discard or rewrite the commits to have a useful but not redundant history.
+Any contributions must be incorporated through a _pull request_ to the branch _staging_ from a _feature branch_. In your branch use all the commits you want but before making a pull request it is better to do an interactive rebase to join, discard or rewrite the commits to have a useful but not redundant history.
 
-Each _pull request_ made to the _staging_ branch involves the building of the whole project. The result of that build can be seen in the _pull request_ itself. When the build is successful, the result of the project build is displayed at a temporary URL provided by Netlify. After that building, the Unit and End-to-End Tests are run. Only the _pull request_ that successfully pass the tests will be integrated into _main_.
+Each _pull request_ made to the _staging_ branch involves the building of the whole project. The result of that build can be seen in the _pull request_ itself. When the build is successful, the result of the project build is displayed at a temporary URL provided by Netlify. After that building, the Unit and End-to-End Tests are run. Only the _pull request_ that successfully pass the tests will be integrated into _staging_, and integrated into _main_ later. Only repository administrators can merge into _staging_ and _main_.
 
 ## Translate Anonymath
 
