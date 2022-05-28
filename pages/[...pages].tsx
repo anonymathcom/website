@@ -35,9 +35,10 @@ function Page(props: any) {
   return (
     <>
       <HtmlHead
-        currentLocale={props.locale}
         title={t('head.title')}
         description={t('head.meta.description')}
+        languages={props.languages}
+        currentLocale={props.locale}
       />
 
       <Navbar languages={props.languages} currentLocale={props.locale} />

@@ -1,7 +1,9 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import logo from '../../public/logo.svg';
 
-const HtmlHead = ({ currentLocale, title, description }: any) => {
+const HtmlHead = ({ title, description, currentLocale, languages }: any) => {
+  const router = useRouter();
   return (
     <Head>
       <title>{title}</title>
@@ -26,6 +28,14 @@ const HtmlHead = ({ currentLocale, title, description }: any) => {
       <meta name="og:site_name" content="Anonymath" />
       <meta name="og:locale" content={currentLocale} />
       <meta name="og:type" content="website" />
+      {languages.map((language: any) => (
+        <link
+          rel="alternate"
+          hrefLang={language.iso}
+          href={`${language.iso}${router.asPath}`}
+          key={language.iso}
+        />
+      ))}
     </Head>
   );
 };
