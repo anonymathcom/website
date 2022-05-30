@@ -35,6 +35,7 @@ function Home(props: any) {
         currentLocale={props.locale}
         title={t('head.title')}
         description={t('head.meta.description')}
+        routes={props.routes}
       />
       <Navbar languages={props.languages} currentLocale={props.locale} />
 
