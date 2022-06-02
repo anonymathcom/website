@@ -13,10 +13,10 @@ const flatRoutes = locales.getFlatRoutes(localeDirectory, defaultLocale);
 let deployPath = 'http://localhost:3000';
 if (process.env.NETLIFY === 'true') {
   deployPath = process.env.URL;
-  if (process.env.CONTEXT === 'deploy-preview') {
-    deployPath = process.env.DEPLOY_URL;
-  }
-  if (process.env.CONTEXT === 'staging') {
+  if (
+    process.env.CONTEXT === 'deploy-preview' ||
+    process.env.CONTEXT === 'staging'
+  ) {
     deployPath = process.env.DEPLOY_PRIME_URL;
   }
 }
