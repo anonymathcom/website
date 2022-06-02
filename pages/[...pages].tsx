@@ -20,6 +20,7 @@ export const getStaticProps = async (params: any) => {
       locale: params.locale,
       languages: process.env.languages,
       routes: nextConfig.routes,
+      deployPath: nextConfig.deployPath,
       pageName: getPageName(
         params.locale,
         params.params.pages[0],
@@ -39,6 +40,7 @@ function Page(props: any) {
         title={t('head.title')}
         description={t('head.meta.description')}
         routes={props.routes}
+        deployPath={props.deployPath}
       />
 
       <Navbar languages={props.languages} currentLocale={props.locale} />

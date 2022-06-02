@@ -2,9 +2,15 @@ import Head from 'next/head';
 import logo from '../../public/logo.svg';
 import { useRouter } from 'next/router';
 
-const HtmlHead = ({ currentLocale, title, description, routes }: any) => {
+const HtmlHead = ({
+  currentLocale,
+  title,
+  description,
+  routes,
+  deployPath,
+}: any) => {
   const router = useRouter();
-  const basePath = 'http://localhost:3000';
+  const basePath = deployPath;
 
   const hrefLang: any[] = [];
   const result_hrefLang = Object.entries(routes).map((route: any) => {
@@ -30,6 +36,7 @@ const HtmlHead = ({ currentLocale, title, description, routes }: any) => {
   return (
     <Head>
       <title>{title}</title>
+      <link rel="icon" href="/favicon.ico" />
       <meta name="robots" content="index, follow" />
       {/* <!-- Search Engine --> */}
       <meta name="description" content={description} />
