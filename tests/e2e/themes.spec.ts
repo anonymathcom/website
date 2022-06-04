@@ -12,7 +12,7 @@ test.describe.parallel(
         }
 
         await page.goto(url);
-        await page.click('img[alt=themeMode]');
+        await page.click('#theme-options');
         await page.click('#dark-option');
 
         const locator = page.locator('html');
@@ -35,7 +35,7 @@ test.describe.parallel(
         }
 
         await page.goto(url);
-        await page.click('img[alt=themeMode]');
+        await page.click('#theme-options');
         await page.click('#light-option');
         const locator = page.locator('html');
         await expect

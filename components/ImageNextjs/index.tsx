@@ -1,6 +1,7 @@
-const ImageNextjs = ({ src, width, height }: any) => {
+const ImageNextjs = ({ id, src, width, height }: any) => {
   return (
     <div
+      id={id}
       style={{
         backgroundImage: `url(${src})`,
         backgroundSize: 'contain',

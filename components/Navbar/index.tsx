@@ -51,7 +51,12 @@ const Navbar = ({ languages, currentLocale }: any): any => {
         <div className="navbar-end">
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link is-arrowless">
-              <ImageNextjs src="/theme.svg" width="28px" height="28px" />
+              <ImageNextjs
+                id="theme-options"
+                src="/theme.svg"
+                width="28px"
+                height="28px"
+              />
             </a>
 
             <div className="navbar-dropdown is-right is-boxed">
