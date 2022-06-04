@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../../public/logo.svg';
 import { useTranslations } from 'next-intl';
+import ImageNextjs from '../../components/ImageNextjs';
 
 const Header = () => {
   const t = useTranslations('Shared.Header');
@@ -11,7 +10,8 @@ const Header = () => {
         <Link href="/">
           <a>
             <span className="brand">Anonymath</span>
-            <Image src={logo} alt="anonymath" width={400} height={80} />
+            <ImageNextjs src="/logo.svg" width="400px" height="80px" />
+            {/*<Image src={logo} alt="anonymath" width={400} height={80} />*/}
           </a>
         </Link>
       </h1>
