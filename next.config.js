@@ -10,6 +10,17 @@ const i18nLocales = locales.getI18nLocales(languageData);
 const routes = locales.getLocalizedRoutes(localeDirectory, defaultLocale);
 const flatRoutes = locales.getFlatRoutes(localeDirectory, defaultLocale);
 
+let deployPath = 'http://localhost:3000';
+if (process.env.NETLIFY === 'true') {
+  deployPath = process.env.URL;
+  if (
+    process.env.CONTEXT === 'deploy-preview' ||
+    process.env.CONTEXT === 'staging'
+  ) {
+    deployPath = process.env.DEPLOY_PRIME_URL;
+  }
+}
+
 const nextConfig = {
   webpack: { fs: 'empty' },
   reactStrictMode: true,
@@ -25,6 +36,7 @@ const nextConfig = {
   },
   routes: routes,
   flatRoutes: flatRoutes,
+  deployPath: deployPath,
 };
 
 module.exports = nextConfig;
