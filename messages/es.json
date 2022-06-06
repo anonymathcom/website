@@ -50,7 +50,7 @@
           "steps": {
             "one": {
               "title": "Primer paso",
-              "description": "Coloca la hoja con la parte impresa hacia abajo. De esta forma lo que has escrito quedará a la vista."
+              "description": "Coloca la hoja con la parte escrita por ti hacia arriba de manera que tu mensaje quede a la vista."
             },
             "two": {
               "title": "Segundo paso",
@@ -58,11 +58,11 @@
             },
             "three": {
               "title": "Tercer paso",
-              "description": "Pliega ahora el otro lado de la hoja, también por la línea punteada."
+              "description": "Pliega ahora por la otra línea punteada del dorso."
             },
             "four": {
               "title": "Cuarto paso",
-              "description": "Este pliego tapará en anterior."
+              "description": "Este pliegue tapará el anterior."
             },
             "five": {
               "title": "Quinto paso",
@@ -74,7 +74,7 @@
             },
             "seven": {
               "title": "Séptimo paso",
-              "description": "Aplástalo contra la superficie plana para acabar el plegado. Verás que un lado la superficie es blanca y por el otro se ve el logo de ANONYMATH."
+              "description": "Para acabar el plegado aplástalo contra una superficie plana. Verás que un lado es blanco y el otro tiene el logo de ANONYMATH."
             }
           }
         },
