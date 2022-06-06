@@ -1,10 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import language from '../../public/language.svg';
-import themeMode from '../../public/theme.svg';
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import ImageBackground from '../../components/ImageBackground';
 
 export const getStaticProps = async (params: any) => {
   return {
@@ -53,7 +51,12 @@ const Navbar = ({ languages, currentLocale }: any): any => {
         <div className="navbar-end">
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link is-arrowless">
-              <Image src={themeMode} alt="themeMode" />
+              <ImageBackground
+                id="theme-options"
+                src="/theme.svg"
+                width="28px"
+                height="28px"
+              />
             </a>
 
             <div className="navbar-dropdown is-right is-boxed">
@@ -88,7 +91,7 @@ const Navbar = ({ languages, currentLocale }: any): any => {
 
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link is-arrowless">
-              <Image src={language} alt="language" />
+              <ImageBackground src="/language.svg" width="28px" height="28px" />
             </a>
 
             <div className="navbar-dropdown is-right is-boxed">
