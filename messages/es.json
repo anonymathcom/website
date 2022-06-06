@@ -49,25 +49,32 @@
           "description": "Estas son las instrucciones para que puedas plegar la hoja en la que has escrito tu mensaje de tal forma que su contenido quede oculto. La plantilla te ayudará en el proceso.",
           "steps": {
             "one": {
-              "title": "Primer paso"
+              "title": "Primer paso",
+              "description": "Coloca la hoja con la parte impresa hacia abajo. De esta forma lo que has escrito quedará a la vista."
             },
             "two": {
-              "title": "Segundo paso"
+              "title": "Segundo paso",
+              "description": "Haz el primer pliegue a lo largo de la línea punteada que hay en el dorso. Te quedará a la vista el dibujo del \"mensaje en la botella\"."
             },
             "three": {
-              "title": "Tercer paso"
+              "title": "Tercer paso",
+              "description": "Pliega ahora el otro lado de la hoja, también por la línea punteada."
             },
             "four": {
-              "title": "Cuarto paso"
+              "title": "Cuarto paso",
+              "description": "Este pliego tapará en anterior."
             },
             "five": {
-              "title": "Quinto paso"
+              "title": "Quinto paso",
+              "description": "Este es el último plegado. No tiene líneas punteadas. Se trata de introducir un extremo del papel doblado dentro del otro. El de la derecha hace de sobre y el de la izquierda es el que se introduce dentro del otro."
             },
             "six": {
-              "title": "Sexto paso"
+              "title": "Sexto paso",
+              "description": "Se debe introducir hasta la línea de puntos."
             },
             "seven": {
-              "title": "Séptimo paso"
+              "title": "Séptimo paso",
+              "description": "Aplástalo contra la superficie plana para acabar el plegado. Verás que un lado la superficie es blanca y por el otro se ve el logo de ANONYMATH."
             }
           }
         },

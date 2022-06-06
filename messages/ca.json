@@ -49,25 +49,32 @@
           "description": "Aquestes són les instruccions per tal que puguis plegar el full en el que has escrit el teu missatge de manera que el seu contingut quedi ocult. La plantilla t'ajudarà en el procés.",
           "steps": {
             "one": {
-              "title": "Primer pas"
+              "title": "Primer pas",
+              "description": ""
             },
             "two": {
-              "title": "Segon pas"
+              "title": "Segon pas",
+              "description": ""
             },
             "three": {
-              "title": "Tercer pas"
+              "title": "Tercer pas",
+              "description": ""
             },
             "four": {
-              "title": "Quart pas"
+              "title": "Quart pas",
+              "description": ""
             },
             "five": {
-              "title": "Cinquè pas"
+              "title": "Cinquè pas",
+              "description": ""
             },
             "six": {
-              "title": "Sisè pas"
+              "title": "Sisè pas",
+              "description": ""
             },
             "seven": {
-              "title": "Setè pas"
+              "title": "Setè pas",
+              "description": ""
             }
           }
         },
