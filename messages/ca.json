@@ -50,31 +50,31 @@
           "steps": {
             "one": {
               "title": "Primer pas",
-              "description": ""
+              "description": "Col·loca el full amb la cara escrita per tu mirant amunt de manera que el teu missatge quedi a la vista. "
             },
             "two": {
               "title": "Segon pas",
-              "description": ""
+              "description": "Fes el primer doblec per la línea puntejada que hi ha al revers del full. Et quedarà a la vista el dibuix del \"missatge en l'ampolla\"."
             },
             "three": {
               "title": "Tercer pas",
-              "description": ""
+              "description": "Doblega ara per l'altra línea puntejada del revers del full."
             },
             "four": {
               "title": "Quart pas",
-              "description": ""
+              "description": "Aquest doblec ocultarà l'anterior."
             },
             "five": {
               "title": "Cinquè pas",
-              "description": ""
+              "description": "Aquest és l'últim doblec. No té línies puntejades. Es tracta d'introduir un extrem del paper doblegat dins de l'altre. El de la dreta fa de sobre i el de l'esquerra és el que s'introdueix dins de l'altre."
             },
             "six": {
               "title": "Sisè pas",
-              "description": ""
+              "description": "S'ha d'introduir fins la línea de punts."
             },
             "seven": {
               "title": "Setè pas",
-              "description": ""
+              "description": "Per rematar el doblec aixafa'l contra una superfície plana. Veuràs que un costat t'ha quedat totalment blanc i l'altre té el logotip d'ANONYMATH."
             }
           }
         },
