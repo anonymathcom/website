@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import logo from '../../public/logo.svg';
+import ImageExplicitWidthAndHeight from '../../components/ImageExplicitWidthAndHeight';
 
 const Header = () => {
   const t = useTranslations('Shared.Header');
@@ -11,7 +12,14 @@ const Header = () => {
         <Link href="/">
           <a>
             <span className="brand">Anonymath</span>
-            <Image
+            <ImageExplicitWidthAndHeight
+              id="img-logo"
+              src={logo}
+              width={400}
+              height={80}
+              alt="anonymath"
+            />
+            {/*<Image
               id="img-logo"
               src={logo}
               alt="anonymath"
@@ -25,7 +33,7 @@ const Header = () => {
                   .getElementById('img-logo')
                   ?.setAttribute('height', '' + imageDimension.naturalHeight);
               }}
-            />
+            />*/}
           </a>
         </Link>
       </h1>
