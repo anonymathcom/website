@@ -1,4 +1,4 @@
-const ImageNextjs = ({ id, src, width, height }: any) => {
+const ImageBackground = ({ id, src, width, height }: any) => {
   return (
     <div
       id={id}
@@ -15,4 +15,4 @@ const ImageNextjs = ({ id, src, width, height }: any) => {
   );
 };
 
-export default ImageNextjs;
+export default ImageBackground;

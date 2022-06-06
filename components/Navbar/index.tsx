@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import ImageNextjs from '../../components/ImageNextjs';
+import ImageBackground from '../../components/ImageBackground';
 
 export const getStaticProps = async (params: any) => {
   return {
@@ -51,7 +51,7 @@ const Navbar = ({ languages, currentLocale }: any): any => {
         <div className="navbar-end">
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link is-arrowless">
-              <ImageNextjs
+              <ImageBackground
                 id="theme-options"
                 src="/theme.svg"
                 width="28px"
@@ -91,7 +91,7 @@ const Navbar = ({ languages, currentLocale }: any): any => {
 
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link is-arrowless">
-              <ImageNextjs src="/language.svg" width="28px" height="28px" />
+              <ImageBackground src="/language.svg" width="28px" height="28px" />
             </a>
 
             <div className="navbar-dropdown is-right is-boxed">
