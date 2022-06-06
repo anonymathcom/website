@@ -11,7 +11,21 @@ const Header = () => {
         <Link href="/">
           <a>
             <span className="brand">Anonymath</span>
-            <Image src={logo} alt="anonymath" width={400} height={80} />
+            <Image
+              id="img-logo"
+              src={logo}
+              alt="anonymath"
+              width={400}
+              height={80}
+              onLoadingComplete={(imageDimension) => {
+                document
+                  .getElementById('img-logo')
+                  ?.setAttribute('width', '' + imageDimension.naturalWidth);
+                document
+                  .getElementById('img-logo')
+                  ?.setAttribute('height', '' + imageDimension.naturalHeight);
+              }}
+            />
           </a>
         </Link>
       </h1>
