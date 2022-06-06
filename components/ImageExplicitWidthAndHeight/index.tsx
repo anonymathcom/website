@@ -9,6 +9,7 @@ const ImageExplicitWidthAndHeight = ({ id, src, width, height, alt }: any) => {
         alt={alt}
         width={width}
         height={height}
+        layout="raw"
         onLoadingComplete={() => {
           const imgs = document.querySelectorAll('#' + id + ' img');
           imgs.forEach((img) => {
