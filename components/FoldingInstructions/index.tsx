@@ -2,7 +2,7 @@ import styles from './FoldingInstructions.module.scss';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
+import ImageExplicitWidthAndHeight from '../../components/ImageExplicitWidthAndHeight';
 import slide_01 from '../../public/carousel/fig-01.svg';
 import slide_02 from '../../public/carousel/fig-02.svg';
 import slide_03 from '../../public/carousel/fig-03.svg';
@@ -29,129 +29,66 @@ const FoldingInstructions = () => {
       onChange={handleCarouselChange}
     >
       <figure>
-        <Image
-          id="img-1"
-          alt={t('one.title')}
+        <ImageExplicitWidthAndHeight
+          id="slide-1"
           src={slide_01}
-          layout="intrinsic"
-          objectFit="contain"
-          priority
-          onLoadingComplete={(imageDimension) => {
-            document
-              .getElementById('img-1')
-              ?.setAttribute('width', '' + imageDimension.naturalWidth);
-            document
-              .getElementById('img-1')
-              ?.setAttribute('height', '' + imageDimension.naturalHeight);
-          }}
+          width={156}
+          height={94}
+          alt={t('one.title')}
         />
       </figure>
       <figure>
-        <Image
-          id="img-2"
-          alt={t('two.title')}
+        <ImageExplicitWidthAndHeight
+          id="slide-2"
           src={slide_02}
-          layout="intrinsic"
-          objectFit="contain"
-          priority
-          onLoadingComplete={(imageDimension) => {
-            document
-              .getElementById('img-2')
-              ?.setAttribute('width', '' + imageDimension.naturalWidth);
-            document
-              .getElementById('img-2')
-              ?.setAttribute('height', '' + imageDimension.naturalHeight);
-          }}
+          width={156}
+          height={94}
+          alt={t('two.title')}
         />
       </figure>
       <figure>
-        <Image
-          id="img-3"
-          alt={t('three.title')}
+        <ImageExplicitWidthAndHeight
+          id="slide-3"
           src={slide_03}
-          layout="intrinsic"
-          objectFit="contain"
-          priority
-          onLoadingComplete={(imageDimension) => {
-            document
-              .getElementById('img-3')
-              ?.setAttribute('width', '' + imageDimension.naturalWidth);
-            document
-              .getElementById('img-3')
-              ?.setAttribute('height', '' + imageDimension.naturalHeight);
-          }}
+          width={156}
+          height={94}
+          alt={t('three.title')}
         />
       </figure>
       <figure>
-        <Image
-          id="img-4"
-          alt={t('four.title')}
+        <ImageExplicitWidthAndHeight
+          id="slide-4"
           src={slide_04}
-          layout="intrinsic"
-          objectFit="contain"
-          priority
-          onLoadingComplete={(imageDimension) => {
-            document
-              .getElementById('img-4')
-              ?.setAttribute('width', '' + imageDimension.naturalWidth);
-            document
-              .getElementById('img-4')
-              ?.setAttribute('height', '' + imageDimension.naturalHeight);
-          }}
+          width={156}
+          height={94}
+          alt={t('four.title')}
         />
       </figure>
       <figure>
-        <Image
-          id="img-5"
-          alt={t('five.title')}
+        <ImageExplicitWidthAndHeight
+          id="slide-5"
           src={slide_05}
-          layout="intrinsic"
-          objectFit="contain"
-          priority
-          onLoadingComplete={(imageDimension) => {
-            document
-              .getElementById('img-5')
-              ?.setAttribute('width', '' + imageDimension.naturalWidth);
-            document
-              .getElementById('img-5')
-              ?.setAttribute('height', '' + imageDimension.naturalHeight);
-          }}
+          width={156}
+          height={94}
+          alt={t('five.title')}
         />
       </figure>
       <figure>
-        <Image
-          id="img-6"
-          alt={t('six.title')}
+        <ImageExplicitWidthAndHeight
+          id="slide-6"
           src={slide_06}
-          layout="intrinsic"
-          objectFit="contain"
-          priority
-          onLoadingComplete={(imageDimension) => {
-            document
-              .getElementById('img-6')
-              ?.setAttribute('width', '' + imageDimension.naturalWidth);
-            document
-              .getElementById('img-6')
-              ?.setAttribute('height', '' + imageDimension.naturalHeight);
-          }}
+          width={156}
+          height={94}
+          alt={t('six.title')}
         />
       </figure>
       <figure>
-        <Image
-          id="img-7"
-          alt={t('seven.title')}
+        <ImageExplicitWidthAndHeight
+          id="slide-7"
           src={slide_07}
-          layout="intrinsic"
-          objectFit="contain"
-          priority
-          onLoadingComplete={(imageDimension) => {
-            document
-              .getElementById('img-7')
-              ?.setAttribute('width', '' + imageDimension.naturalWidth);
-            document
-              .getElementById('img-7')
-              ?.setAttribute('height', '' + imageDimension.naturalHeight);
-          }}
+          width={156}
+          height={94}
+          alt={t('seven.title')}
         />
       </figure>
     </Carousel>
