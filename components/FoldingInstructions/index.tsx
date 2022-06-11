@@ -36,6 +36,9 @@ const FoldingInstructions = () => {
           height={94}
           alt={t('one.title')}
         />
+        <figcaption id="step-1-caption" className="is-sr-only">
+          {t('one.description')}
+        </figcaption>
       </figure>
       <figure>
         <ImageExplicitWidthAndHeight
@@ -44,7 +47,11 @@ const FoldingInstructions = () => {
           width={156}
           height={94}
           alt={t('two.title')}
+          longdesc="#step-2-caption"
         />
+        <figcaption id="step-2-caption" className="is-sr-only">
+          {t('two.description')}
+        </figcaption>
       </figure>
       <figure>
         <ImageExplicitWidthAndHeight
@@ -53,7 +60,11 @@ const FoldingInstructions = () => {
           width={156}
           height={94}
           alt={t('three.title')}
+          longdesc="#step-3-caption"
         />
+        <figcaption id="step-3-caption" className="is-sr-only">
+          {t('three.description')}
+        </figcaption>
       </figure>
       <figure>
         <ImageExplicitWidthAndHeight
@@ -62,7 +73,11 @@ const FoldingInstructions = () => {
           width={156}
           height={94}
           alt={t('four.title')}
+          longdesc="#step-4-caption"
         />
+        <figcaption id="step-4-caption" className="is-sr-only">
+          {t('four.description')}
+        </figcaption>
       </figure>
       <figure>
         <ImageExplicitWidthAndHeight
@@ -71,7 +86,11 @@ const FoldingInstructions = () => {
           width={156}
           height={94}
           alt={t('five.title')}
+          longdesc="#step-5-caption"
         />
+        <figcaption id="step-5-caption" className="is-sr-only">
+          {t('five.description')}
+        </figcaption>
       </figure>
       <figure>
         <ImageExplicitWidthAndHeight
@@ -80,7 +99,11 @@ const FoldingInstructions = () => {
           width={156}
           height={94}
           alt={t('six.title')}
+          longdesc="#step-6-caption"
         />
+        <figcaption id="step-6-caption" className="is-sr-only">
+          {t('six.description')}
+        </figcaption>
       </figure>
       <figure>
         <ImageExplicitWidthAndHeight
@@ -89,7 +112,11 @@ const FoldingInstructions = () => {
           width={156}
           height={94}
           alt={t('seven.title')}
+          longdesc="#step-7-caption"
         />
+        <figcaption id="step-7-caption" className="is-sr-only">
+          {t('seven.description')}
+        </figcaption>
       </figure>
     </Carousel>
   );

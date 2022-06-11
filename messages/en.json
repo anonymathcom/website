@@ -49,25 +49,32 @@
           "description": "",
           "steps": {
             "one": {
-              "title": ""
+              "title": "",
+              "description": ""
             },
             "two": {
-              "title": ""
+              "title": "",
+              "description": ""
             },
             "three": {
-              "title": ""
+              "title": "",
+              "description": ""
             },
             "four": {
-              "title": ""
+              "title": "",
+              "description": ""
             },
             "five": {
-              "title": ""
+              "title": "",
+              "description": ""
             },
             "six": {
-              "title": ""
+              "title": "",
+              "description": ""
             },
             "seven": {
-              "title": ""
+              "title": "",
+              "description": ""
             }
           }
         },
