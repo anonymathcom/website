@@ -22,6 +22,9 @@ const ImageExplicitWidthAndHeight = ({
           imgs.forEach((img) => {
             img.setAttribute('width', '' + width);
             img.setAttribute('height', '' + height);
+            // This code is placed here because longdesc attribute is not
+            // recognized by the Image component. Remove this code when
+            // this attribute will be supported by the Image component.
             if (longdesc != undefined) {
               img.setAttribute('longdesc', '' + longdesc);
             }
