@@ -3,15 +3,15 @@
   "Shared": {
     "Header": {
       "title": "Anonymath",
-      "subtitle": "",
+      "subtitle": "Mathematical, anonymous and analogic messages",
       "themes": {
-        "dark-mode": "",
-        "light-mode": ""
+        "dark-mode": "Dark mode",
+        "light-mode": "Light mode"
       }
     },
     "Footer": {
       "contribute": "Contribute",
-      "cookies": ""
+      "cookies": "We do not use cookies or do any tracking."
     }
   },
   "Pages": {
@@ -20,70 +20,70 @@
       "head": {
         "title": "Anonymath",
         "meta": {
-          "description": ""
+          "description": "Mathematical, anonymous and analogic messages. The mathematical 'bookcrossing'."
         }
       },
       "steps": {
         "one": {
-          "title": "",
+          "title": "To write",
           "content": {
             "paragraphs": [
               {
-                "description": ""
+                "description": "Take a white sheet and write something about maths."
               },
               {
-                "description": ""
+                "description": "For example, a problem that you don't know how to solve or that you liked and solved with effort."
               },
               {
-                "description": ""
+                "description": "You can also write those notes that you have made and they are perfect to study some complicated topic. Or why not, how much you hate or love maths. Definitely, whatever you want."
               },
               {
-                "description": ""
+                "description": "We have a template so you can write your message; you can print it or use it as a reference."
               }
             ]
           },
-          "download": ""
+          "download": "See template"
         },
         "two": {
-          "title": "",
-          "description": "",
+          "title": "To fold",
+          "description": "These are the instructions to fold the sheet where you have written your message in such a way that its content is hidden. The template will help you in the process.",
           "steps": {
             "one": {
-              "title": "",
-              "description": ""
+              "title": "First step",
+              "description": "Place the sheet with the written side facing up so that your message is visible."
             },
             "two": {
-              "title": "",
-              "description": ""
+              "title": "Second step",
+              "description": "Make the first fold along the dotted line on the back of the sheet. You will see the drawing of the \"message in the bottle\"."
             },
             "three": {
-              "title": "",
-              "description": ""
+              "title": "Third step",
+              "description": "Now fold along the other dotted line on the back of the sheet."
             },
             "four": {
-              "title": "",
-              "description": ""
+              "title": "Fourth step",
+              "description": "This fold will cover the previous one."
             },
             "five": {
-              "title": "",
-              "description": ""
+              "title": "Fifth step",
+              "description": "This is the last fold. There are no dotted lines. It is about inserting one end of the sheet inside the other. The right end is like an envelop and the left end is the side that we have to insert inside the right end."
             },
             "six": {
-              "title": "",
-              "description": ""
+              "title": "Sixth",
+              "description": "It must be inserted up to the dotted line."
             },
             "seven": {
-              "title": "",
-              "description": ""
+              "title": "Seventh",
+              "description": "To finish the folding flatten it against a flat surface. You will see one side white and the other will have the ANONYMATH logo."
             }
           }
         },
         "three": {
-          "title": "",
+          "title": "To share",
           "content": {
             "paragraphs": [
               {
-                "description": ""
+                "description": "Now is the time to choose the right place and leave your mathematical message there. What will happen from that moment will be a matter of chance and probability."
               }
             ]
           }
@@ -93,23 +93,23 @@
     "Contribute": {
       "path": "contribute",
       "head": {
-        "title": "",
+        "title": "Anonymath - Contribute",
         "meta": {
-          "description": ""
+          "description": "Ways to help improve Anonymath."
         }
       },
       "main": {
-        "title": "",
+        "title": "Contribute",
         "content": {
           "paragraphs": [
             {
-              "description": ""
+              "description": "If you like Anonymath you can contribute by writing and sharing many messages."
             },
             {
-              "description": ""
+              "description": "You can also help us by giving ideas, reporting errors you find on our website or translating Anonymath into your language."
             },
             {
-              "description": ""
+              "description": "You have all the information about how to contribute in our <a href=\"https://github.com/anonymathcom/website/tree/main#translate-anonymath\" target=\"_blank\">Github</a> webpage."
             }
           ]
         }
