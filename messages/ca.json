@@ -1,0 +1,119 @@
+{
+  "language": "Català",
+  "Shared": {
+    "Header": {
+      "title": "Anonymath",
+      "subtitle": "Missatges matemàtics, anònims i analògics",
+      "themes": {
+        "dark-mode": "Mode fosc",
+        "light-mode": "Mode clar"
+      }
+    },
+    "Footer": {
+      "contribute": "Contribuir",
+      "cookies": "No utilitzem galetes ni realitzem cap tipus de seguiment."
+    }
+  },
+  "Pages": {
+    "Home": {
+      "path": "/",
+      "head": {
+        "title": "Anonymath",
+        "meta": {
+          "description": "Missatges matemàtics, anònims i analògics. El 'bookcrossing' de les matemàtiques."
+        }
+      },
+      "steps": {
+        "one": {
+          "title": "Escriure",
+          "content": {
+            "paragraphs": [
+              {
+                "description": "Agafa un full en blanc i escriu alguna cosa de matemàtiques."
+              },
+              {
+                "description": "Per exemple, un problema que no saps com resoldre o un que t'hagi agradat i hagis resolt amb molt d'esforç."
+              },
+              {
+                "description": "També pots escriure-hi aquests apunts que has fet i que són perfectes per estudiar algun tema complicat. O per què no, com de molt odies o estimes les matemàtiques. En definitiva, el que tu vulguis."
+              },
+              {
+                "description": "Tenim una plantilla per tal que puguis escriure el teu missatge; pots imprimir-la o utilitzar-la de referència."
+              }
+            ]
+          },
+          "download": "Veure plantilla"
+        },
+        "two": {
+          "title": "Plegar",
+          "description": "Aquestes són les instruccions per tal que puguis plegar el full en el que has escrit el teu missatge de manera que el seu contingut quedi ocult. La plantilla t'ajudarà en el procés.",
+          "steps": {
+            "one": {
+              "title": "Primer pas",
+              "description": "Col·loca el full amb la cara escrita per tu mirant amunt de manera que el teu missatge quedi a la vista. "
+            },
+            "two": {
+              "title": "Segon pas",
+              "description": "Fes el primer doblec per la línea puntejada que hi ha al revers del full. Et quedarà a la vista el dibuix del \"missatge en l'ampolla\"."
+            },
+            "three": {
+              "title": "Tercer pas",
+              "description": "Doblega ara per l'altra línea puntejada del revers del full."
+            },
+            "four": {
+              "title": "Quart pas",
+              "description": "Aquest doblec ocultarà l'anterior."
+            },
+            "five": {
+              "title": "Cinquè pas",
+              "description": "Aquest és l'últim doblec. No té línies puntejades. Es tracta d'introduir un extrem del paper doblegat dins de l'altre. El de la dreta fa de sobre i el de l'esquerra és el que s'introdueix dins de l'altre."
+            },
+            "six": {
+              "title": "Sisè pas",
+              "description": "S'ha d'introduir fins la línea de punts."
+            },
+            "seven": {
+              "title": "Setè pas",
+              "description": "Per rematar el doblec aixafa'l contra una superfície plana. Veuràs que un costat t'ha quedat totalment blanc i l'altre té el logotip d'ANONYMATH."
+            }
+          }
+        },
+        "three": {
+          "title": "Compartir",
+          "content": {
+            "paragraphs": [
+              {
+                "description": "Ara és el moment d'escollir el lloc adequat i deixar allí el teu missatge matemàtic. El que passarà a partir d'aquest moment serà cosa de l'atzar i la probabilitat."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Contribute": {
+      "path": "contribuir",
+      "head": {
+        "title": "Anonymath - Contribuir",
+        "meta": {
+          "description": "Maneres d'ajudar a millorar Anonymath."
+        }
+      },
+      "main": {
+        "title": "Contribuir",
+        "content": {
+          "paragraphs": [
+            {
+              "description": "Si t'agrada Anonymath pots contribuir-hi escrivint i compartint molts missatges."
+            },
+            {
+              "description": "També pots ajudar-nos donant idees, avisant d'errors que trobis a la nostra pàgina web o traduint Anonymath al teu idioma."
+            },
+            {
+              "description": "Tens tota la informació sobre com contribuir a la nostra pàgina a <a href=\"https://github.com/anonymathcom/anonymath\" target=\"_blank\">Github</a>."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

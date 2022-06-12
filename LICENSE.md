@@ -1,0 +1,1 @@
+We use [Creative Commons BY-NC](https://creativecommons.org/licenses/by-nc/4.0/deed) license. If you need the detailed description of this license, please read the [https://creativecommons.org/licenses/by-nc/4.0/legalcode](legal code).

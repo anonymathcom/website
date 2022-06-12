@@ -1,0 +1,12 @@
+$background: #ffde00;
+$dark-grey: #16171b;
+$light-grey: #64748b;
+
+/* BULMA VARIABLES OVERWRITTEN */
+$body-background-color: $background;
+$family-serif: 'Playfair Display', serif;
+$family-sans-serif: 'Inter', sans-serif;
+$footer-background-color: $background;
+$navbar-background-color: $background;
+
+@import 'bulma/bulma.sass';
