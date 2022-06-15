@@ -11,6 +11,7 @@ updates:
       interval: "weekly"
     assignees:
       - "isfegu"
-    prefix: "build"
+    commit-message:
+      prefix: "build"
     target-branch: "staging"
 
