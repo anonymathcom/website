@@ -59,17 +59,14 @@ const HtmlHead = ({
       <meta name="og:locale" content={currentLocale} />
       <meta name="og:type" content="website" />
 
-      {hrefLang?.map(
-        (hrefLang: any) =>
-          hrefLang.locale != currentLocale && (
-            <link
-              rel="alternate"
-              hrefLang={hrefLang.locale}
-              href={hrefLang.path}
-              key={hrefLang.locale}
-            />
-          )
-      )}
+      {hrefLang?.map((hrefLang: any) => (
+        <link
+          rel="alternate"
+          hrefLang={hrefLang.locale}
+          href={hrefLang.path}
+          key={hrefLang.locale}
+        />
+      ))}
     </Head>
   );
 };
