@@ -2,3 +2,4 @@
 .husky
 .next
 node_modules
+cache

@@ -1,5 +1,5 @@
 import styles from './ImageExplicitWidthAndHeight.module.scss';
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 const ImageExplicitWidthAndHeight = ({
   id,
@@ -16,7 +16,6 @@ const ImageExplicitWidthAndHeight = ({
         alt={alt}
         width={width}
         height={height}
-        layout="raw"
         onLoadingComplete={() => {
           const imgs = document.querySelectorAll('#' + id + ' img');
           imgs.forEach((img) => {
