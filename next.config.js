@@ -37,7 +37,7 @@ const nextConfig = {
   routes: routes,
   flatRoutes: flatRoutes,
   deployPath: deployPath,
-  experimental: { images: { layoutRaw: true } },
+  experimental: { images: { allowFutureImage: true } },
 };
 
 module.exports = nextConfig;
